@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+
+  <title>FilMore</title>
+
+</head>
+<body>
+  <header>
+    <div class="logo">movi🎬 </div>
+    <nav>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Home</a>
+          <div class="dropdown-content">
+            <a href="#popular">Popular</a>
+            <a href="#top-rated">Top Rated</a>
+            <a href="#new-release">New Release</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Category</a>
+          <div class="dropdown-content">
+            <a href="#action">Action</a>
+            <a href="#comedy">Comedy</a>
+            <a href="#drama">Drama</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Documander</a>
+          <div class="dropdown-content">
+            <a href="#historic">Historic</a>
+            <a href="#environment">Environment</a>
+            <a href="#science">Science</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#">Paidika</a>
+          <div class="dropdown-content">
+            <a href="#animation">Animation</a>
+            <a href="#educational">Educational</a>
+            <a href="#family">Family</a>
+          </div>
+        </li>
+        <li class="search-container">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" class="search-input" placeholder="Αναζήτηση ταινιών...">
+          <div id="search-results" class="search-results"></div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="slider">
+    <div class="slides-container" id="slides">
+      <!-- Slides will be populated by JavaScript -->
+    </div>
+  </section>
+
+  <section class="movie-lists">
+    <div class="movie-list" id="popular">
+      <h2>Popular Movies</h2>
+      <div class="movies-container" id="popular-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="top-rated">
+      <h2>Top Rated Movies</h2>
+      <div class="movies-container" id="top-rated-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="new-release">
+      <h2>New Releases</h2>
+      <div class="movies-container" id="new-release-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <!-- New category lists -->
+    <div class="movie-list" id="action">
+      <h2>Action Movies</h2>
+      <div class="movies-container" id="action-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="comedy">
+      <h2>Comedy Movies</h2>
+      <div class="movies-container" id="comedy-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="drama">
+      <h2>Drama Movies</h2>
+      <div class="movies-container" id="drama-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Documentary Categories -->
+    <div class="movie-list" id="historic">
+      <h2>Historic Documentaries</h2>
+      <div class="movies-container" id="historic-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="environment">
+      <h2>Environment Documentaries</h2>
+      <div class="movies-container" id="environment-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="science">
+      <h2>Science Documentaries</h2>
+      <div class="movies-container" id="science-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <!-- Paidika Categories -->
+    <div class="movie-list" id="animation">
+      <h2>Animation Movies</h2>
+      <div class="movies-container" id="animation-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="educational">
+      <h2>Educational Programs</h2>
+      <div class="movies-container" id="educational-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+
+    <div class="movie-list" id="family">
+      <h2>Family Movies</h2>
+      <div class="movies-container" id="family-movies">
+        <!-- Will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <div id="movie-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <div class="modal-details">
+        <div class="modal-poster" id="modal-poster"></div>
+        <div class="modal-info">
+          <h2 id="modal-title"></h2>
+          <p id="modal-year"></p>
+          <p id="modal-plot"></p>
+          <div class="quote" id="modal-quote"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to top button -->
+  <div class="scroll-top-btn" id="scrollTopBtn" title="Επιστροφή στην αρχή">
+    <span class="arrow-up"></span>
+  </div>
+
+  <!-- Video trailer modal -->
+  <div id="video-modal" class="video-modal">
+    <div class="video-container">
+      <iframe id="video-iframe" class="video-iframe" allowfullscreen></iframe>
+    </div>
+    <button class="back-button" id="back-button">Επιστροφή στις ταινίες</button>
+  </div>
+	<script src="script.js"></script>
+
+</body>
+</html>
